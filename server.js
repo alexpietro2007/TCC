@@ -1,0 +1,26 @@
+import express from "express";
+import { path } from "path";
+
+const app = express();
+const PORT = 3000;
+
+// Middleware para arquivos estáticos
+app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
+
+// Endpoint de envio do formulário
+app.post('/contato', (req, res) => {
+  const { nome, email, telefone, mensagem } = req.body;
+
+  console.log("Dados recebidos do formulário:");
+  console.log({ nome, email, telefone, mensagem });
+
+  // Simula um envio com sucesso
+  res.json({ status: 'sucesso', mensagem: 'Mensagem enviada com sucesso!' });
+});
+
+// Inicia o servidor
+app.listen(PORT, () => {
+  console.log(`Servidor rodando em http://localhost:${PORT}`);
+});
