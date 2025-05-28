@@ -5,7 +5,7 @@ const app = express();
 const PORT = 3000;
 
 // Middleware para arquivos estáticos
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '../client/public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
@@ -19,6 +19,10 @@ app.post('/contato', (req, res) => {
   // Simula um envio com sucesso
   res.json({ status: 'sucesso', mensagem: 'Mensagem enviada com sucesso!' });
 });
+
+app.get('/', (req, res)=>{
+  res.sendFile(path.join(__dirname, '../client/public', 'index.html'))
+})
 
 // Inicia o servidor
 app.listen(PORT, () => {
