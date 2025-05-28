@@ -1,6 +1,7 @@
-import express from "express";
+import express, { Router } from "express";
 import path from "path";
 import { fileURLToPath } from "url";
+import rotas from './routes/rotas.js'
 
 const app = express();
 const PORT = 3000;
@@ -13,21 +14,7 @@ app.use(express.static(path.join(__dirname, '../client/public')));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
-// Endpoint de envio do formulário
-app.post('/contato', (req, res) => {
-  const { nome, email, telefone, mensagem } = req.body;
-
-  console.log("Dados recebidos do formulário:");
-  console.log({ nome, email, telefone, mensagem });
-
-  // Simula um envio com sucesso
-  res.json({ status: 'sucesso', mensagem: 'Mensagem enviada com sucesso!' });
-});
-
-app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '../client/public/pages', 'index.html'));
-});
-
+app.use('/', rotas)
 
 // Inicia o servidor
 app.listen(PORT, () => {
