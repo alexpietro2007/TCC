@@ -9,7 +9,7 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 // Rota para o formulário
-router.get('/contato', form);
+router.post('/contato', form);
 
 // Rota para o index.html
 router.get('/', (req, res) => {
