@@ -8,7 +8,7 @@ export async function form(req, res) {
     service: 'gmail',
     auth: {
       user: 'trinity.inova@gmail.com',          // seu email
-      pass: 'ogac anlo vkyr rppo',    // sua senha ou app password do Gmail
+      pass: 'synq dihf gdtq anqh',    // sua senha ou app password do Gmail
     },
   });
 
