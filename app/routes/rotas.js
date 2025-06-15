@@ -1,7 +1,10 @@
 import { Router } from "express";
 import path from "path";
 import { fileURLToPath } from "url";
-import { form } from "../controllers/controleDados.js";
+import {
+  form,
+
+} from "../controllers/controleDados.js";
 
 const router = Router();
 
@@ -10,6 +13,9 @@ const __dirname = path.dirname(__filename);
 
 // Rota para o formulário
 router.post('/contato', form);
+router.get('/contato', (req, res) => {
+  res.redirect('/');
+});
 
 // Rota para o index.html
 router.get('/', (req, res) => {

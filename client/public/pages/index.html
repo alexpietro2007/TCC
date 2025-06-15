@@ -1,83 +1,161 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
   <title>Trinity - Soluções Digitais</title>
-  <link rel="stylesheet" href="../styles/style.css">
+  <link href="/styles/style.css" rel="stylesheet" />
 </head>
+
 <body>
-  <header>
-    <h1>Criando Softwares sob medida para negócios que querem ir além</h1>
+  <div class="gradiente">
     <nav>
-      <a href="#sobre">Sobre Nós</a>
-      <a href="#projetos">Projetos</a>
-      <a href="#equipe">Equipe</a>
-      <a href="#parcerias">Parcerias</a>
-      <a href="#contato">Contato</a>
+      <div class="logo">
+        <img alt="Trinity" class="logo-img" src="/images/logot.png" />
+      </div>
+      <ul class="menu">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#projetos">Projetos</a></li>
+        <li><a href="#equipe">Equipe</a></li>
+        <li><a href="#parcerias">Parcerias</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
     </nav>
+  </div>
+
+  <header class="hero fade-in">
+    <div class="hero-text">
+      <h1 class="underline">Criando Softwares_</h1>
+      <h2>sob medida para negócios<br />que querem ir além</h2>
+      <p>Com tecnologia estratégica, design inteligente e resultados reais.</p>
+      <a class="btn" href="#contato">Entre em contato</a>
+    </div>
   </header>
- 
-  <main>
-    <section id="sobre">
-      <h2>Sobre Nós</h2>
-      <p>A Trinity cria soluções digitais com inovação e foco em resultados.</p>
-    </section>
- 
-    <section id="projetos">
-      <h2>Projetos</h2>
-      <p>Explore o que podemos construir juntos.</p>
-    </section>
- 
-    <section id="equipe">
-      <h2>Equipe</h2>
+
+  <section class="section fade-in" id="sobre">
+    <h2 class="underline">Trinity_</h2>
+    <p>A Trinity cria soluções digitais com tecnologia, inovação e foco em resultados. Transformamos ideias em software.
+    </p>
+    <div class="valores">
+      <div>Tecnologia</div>
+      <div>Inovação</div>
+      <div>Resoluções</div>
+    </div>
+    <p>Entregamos valor real, mensurável e prático.</p>
+  </section>
+
+  <section class="section fade-in" id="projetos">
+    <h2 class="underline">Explore_</h2>
+    <p>O que podemos construir juntos</p>
+    <div class="cards-projetos">
+      <div class="card-projeto">
+        <h3>Plataformas Inteligentes</h3>
+        <p>Arquitetadas para escalar, integrar e transformar operações digitais.</p>
+      </div>
+      <div class="card-projeto">
+        <h3>Experiências Interativas</h3>
+        <p>Design centrado no usuário, com foco em performance e estética.</p>
+      </div>
+      <div class="card-projeto">
+        <h3>Integrações Estratégicas</h3>
+        <p>Conectamos ferramentas, dados e fluxos para decisões mais rápidas.</p>
+      </div>
+      <div class="card-projeto">
+        <h3>Visões em Construção</h3>
+        <p>Transforme ideias em produtos com design, tecnologia e impacto.</p>
+      </div>
+    </div>
+  </section>
+
+  <div class="gradiente2">
+    <section class="section fade-in" id="equipe">
+      <h2>Descubra_</h2>
+      <p>O time que torna cada projeto possível</p>
       <div class="carrossel-container">
-        <button class="carrossel-btn" id="prevBtn">&#10094;</button>
-        <div class="carrossel" id="carrosselEquipe">
-          <div class="membro">
-<img src="/" alt="Roberta Flores">
-            <h3>Roberta Flores</h3>
-            <p>Desenvolvedora Front-End</p>
+        <button class="carrossel-btn" id="prevBtn">❮</button>
+        <div class="carrossel" id="carrossel">
+          <!-- Membros -->
+          <div class="membro"><img alt="Thalita" src="/images/thalita.png" />
+            <h3>Thalita</h3>
+            <p>Gerente de Projeto / Analista</p>
           </div>
-          <div class="membro">
-<img src="/" alt="Alberto Silva">
-            <h3>Alberto Silva</h3>
-            <p>Desenvolvedor Front-End</p>
+          <div class="membro"><img alt="Matheus Almeida" src="/images/almeida.jpeg" />
+            <h3>Matheus Almeida</h3>
+            <p>Gestor de Desenvolvimento</p>
           </div>
-      <div class="membro">
-        <img src="/" alt="Roberta Flores">
-                    <h3>Roberta Flores</h3>
-                    <p>Desenvolvedora Front-End</p>
-                  </div>
-                  <div class="membro">
-                    <img src="/" alt="mané">
-                                <h3>Roberta Flores</h3>
-                                <p>Desenvolvedora Front-End</p>
-                              </div>
-                              <button class="carrossel-btn" id="nextBtn">&#10095;</button>
+          <div class="membro"><img alt="Lucas Santana" src="/images/santana.jpeg" />
+            <h3>Lucas Santana</h3>
+            <p>Gerente de Projeto / Tester</p>
+          </div>
+          <div class="membro"><img alt="Lucas Luz" src="/images/luz.jpeg" />
+            <h3>Lucas Luz</h3>
+            <p>DBA</p>
+          </div>
+          <div class="membro"><img alt="Alex" src="/images/alex.jpeg" />
+            <h3>Alex</h3>
+            <p>Desenvolvedor Back End</p>
+          </div>
+          <div class="membro"><img alt="Thais" src="/images/thais.jpeg" />
+            <h3>Thais</h3>
+            <p>Desenvolvedora Front End</p>
+          </div>
+          <div class="membro"><img alt="Lucas Freire" src="/images/freire.jpeg" />
+            <h3>Lucas Freire</h3>
+            <p>Desenvolvedor Front End</p>
+          </div>
+          <div class="membro"><img alt="Gustavo Henrique" src="/images/henrique.jpeg" />
+            <h3>Gustavo Henrique</h3>
+            <p>Desenvolvedor Front End</p>
+          </div>
+        </div>
+        <button class="carrossel-btn" id="nextBtn">❯</button>
+      </div>
     </section>
- 
-    <section id="parcerias">
-      <h2>Parcerias</h2>
-      <p>Conheça as empresas que caminham com a gente rumo à inovação.</p>
+  </div>
+
+  <section class="section fade-in" id="parcerias">
+    <h2 class="underline">Parcerias</h2>
+    <p>Conheça as empresas que caminham com a gente rumo à inovação.</p>
+    <div class="logos-parceiros">
+      <img alt="Somnium" src="/images/Somnium logo.png" />
+      <img alt="Gama Academy" src="/images/gama (1).png" />
+      <img alt="Outlier Tech" src="/images/outlier.png" />
+    </div>
+    <p>Juntos, transformamos ideias em soluções escaláveis e inovadoras, <br>garantindo resultados que superam as
+      expectativas de nossos clientes.</p>
+  </section>
+
+  <div class="gradiente2">
+    <section class="section contato fade-in" id="contato">
+      <h2 class="underline">Contato</h2>
+      <div class="contato-container">
+        <div class="contato-texto">
+          <p>Pronto_</p>
+          <p>Se você busca inovação, performance e soluções sob medida, a Trinity é o seu próximo passo.</p>
+          <p>Preencha o formulário e fale com a gente. <strong>Juntos, vamos desenvolver algo incrível.</strong></p>
+        </div>
+
+        <form id="form-contato" method="POST" novalidate>
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" placeholder="Nome*" required type="text" />
+          <label for="email">Email</label>
+          <input id="email" name="email" placeholder="Email Comercial*" required type="email" />
+          <label for="telefone">Telefone</label>
+          <input id="telefone" name="telefone" placeholder="Telefone com DDD*" required type="tel" />
+          <textarea id="mensagem" name="mensagem" placeholder="Explique a sua demanda*" required></textarea>
+          <button type="submit">Enviar</button>
+        </form>
+
+      </div>
     </section>
- 
-    <section id="contato">
-      <h2>Contato</h2>
-      <form id="formContato">
-        <input type="text" id="nome" placeholder="Nome*" required><br>
-        <input type="email" id="email" placeholder="Email Comercial*" required><br>
-        <input type="tel" id="telefone" placeholder="Telefone com DDD*" required><br>
-        <textarea id="mensagem" placeholder="Explique a sua demanda..." required></textarea><br>
-        <button type="submit">Enviar</button>
-        <p id="mensagemStatus"></p>
-      </form>
-    </section>
-  </main>
- 
+  </div>
+
   <footer>
-    <p>Se você busca inovação, performance e soluções sob medida, a Trinity é o seu próximo passo.</p>
+    <p>© 2025 Trinity. Todos os direitos reservados.</p>
   </footer>
- 
-  <script src="../scripts/script.js"></script>
+<script src="../scripts/script.js"></script>
 </body>
+
 </html>
